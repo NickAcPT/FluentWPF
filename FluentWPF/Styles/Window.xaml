@@ -240,15 +240,15 @@
             </Grid>
         </Border>
         <ControlTemplate.Triggers>
-            <Trigger Property="IsActive" Value="False">
+            <!--<Trigger Property="IsActive" Value="False">
                 <Setter TargetName="windowBorder" Property="Border.BorderBrush" Value="Gray" />
-            </Trigger>
+            </Trigger>-->
             <Trigger Property="WindowState" Value="Maximized">
             </Trigger>
 
-            <Trigger Property="IsActive" Value="False">
+            <!--<Trigger Property="IsActive" Value="False">
                 <Setter TargetName="captionGrid" Property="TextBlock.Foreground" Value="Gray" />
-            </Trigger>
+            </Trigger>-->
             <Trigger Property="WindowState" Value="Maximized">
                 <Setter TargetName="btnMaximizeButton" Property="Visibility" Value="Collapsed" />
                 <Setter TargetName="btnRestoreButton" Property="Visibility" Value="Visible" />
@@ -329,11 +329,11 @@
                         </Grid>
                     </Grid>
                     <DataTemplate.Triggers>
-                        <DataTrigger Binding="{Binding IsActive, RelativeSource={RelativeSource AncestorType=Window}}" Value="False">
+                        <!--<DataTrigger Binding="{Binding IsActive, RelativeSource={RelativeSource AncestorType=Window}}" Value="False">
                             <Setter TargetName="tintColorLayer" Property="Visibility" Value="Collapsed" />
                             <Setter TargetName="noiseLayer" Property="Visibility" Value="Collapsed" />
                             <Setter TargetName="fallbackLayer" Property="Visibility" Value="Visible" />
-                        </DataTrigger>
+                        </DataTrigger>-->
                         <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=(local:AcrylicWindow.ExtendViewIntoTitleBar)}" Value="True">
                             <Setter TargetName="content" Property="Grid.Row" Value="0" />
                             <Setter TargetName="content" Property="Grid.RowSpan" Value="2" />
@@ -350,9 +350,9 @@
             </Setter.Value>
         </Setter>
         <Style.Triggers>
-            <Trigger Property="IsActive" Value="False">
+            <!--<Trigger Property="IsActive" Value="False">
                 <Setter Property="BorderBrush" Value="{DynamicResource SystemBaseMediumLowColorBrush}" />
-            </Trigger>
+            </Trigger>-->
             <Trigger Property="local:AcrylicWindow.AcrylicWindowStyle" Value="None">
                 <Setter Property="WindowChrome.WindowChrome">
                     <Setter.Value>

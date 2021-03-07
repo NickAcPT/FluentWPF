@@ -24,7 +24,7 @@
     <PackageIconUrl>https://raw.githubusercontent.com/sourcechord/FluentWPF/master/logo.png</PackageIconUrl>
     <PackageTags>WPF XAML Fluent Design Theme Library</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Version>0.10.0-alpha001</Version>
+    <Version>0.10.0-alpha002</Version>
     <Description>Fluent Design System for WPF</Description>
     <Copyright>Copyright ©  2017</Copyright>
     <Company>SourceChord</Company>
